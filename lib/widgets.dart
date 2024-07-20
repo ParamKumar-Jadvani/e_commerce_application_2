@@ -3,10 +3,7 @@ import 'package:e_commerce_exam_application/utils/product_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-Widget home_ui(
-    {required BuildContext context,
-    required List<Map> products,
-    String selectedCategory = 'All Products'}) {
+Widget home_ui({required BuildContext context, required List<Map> products}) {
   Size size = MediaQuery.sizeOf(context);
   return Expanded(
     child: GridView.builder(
